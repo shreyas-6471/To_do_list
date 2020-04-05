@@ -1,0 +1,128 @@
+@media only screen and (min-width: 1800px) {
+    @media only screen and (min-width: 1800px) {
+body{
+    background-color:gray;
+    min-width: 300px;
+    max-height: 500px;;
+}
+#shr{
+    position: relative;
+    background-color:white;
+    width:60%;
+    height:100vh;
+    left:500px;
+ 
+    max-height:auto;
+}
+h1{
+    position: relative;
+    text-align: center;
+    left:0px;
+    color:gray;
+
+}
+#shr0{
+    position: absolute;
+    top:80px;
+    color:gray;
+    font-size: 20px;
+
+}
+#shr1 input{
+    position: absolute;
+    width:100%;
+    height:25%;
+    top:100px;
+    left:-3.0px;
+}
+#shr2{
+    position:absolute;
+    width:100%;
+    height:25%;
+    top:255px;
+    background-color: red;
+}
+#shr2 select{
+    position: absolute;
+    height:100%;
+    width:55%;
+}
+#shr2 input{
+    position:absolute;
+    height:100%;
+    width:45%;
+    left:55%;
+}
+#shr3{
+    position:absolute;
+    width:100%;
+    height:25%;
+    top:510px;
+}
+#shr3 button{
+     position: absolute;
+     width:25%;
+     height:40%;
+     left:35%;
+     bottom:10vh;
+     background-color:#3b3534;
+}
+/*#shr4{
+    position: absolute;;
+    width:100%;
+    height:auto;
+    top:500px;
+}
+#shr4-0{
+    position:absolute;
+    left:40px;
+}
+#shr4-1{
+    position: absolute;
+    top:200px;
+    left:40px;
+}
+#shr4-2 p{
+    position: absolute;
+    width:100px;
+    height:100px;
+    background-color: yellowgreen;
+    left:100px;
+    top:60px;
+}
+span{
+    display:block;
+}*/
+#shr4{
+    position: relative;
+    width: 100%;
+    height:200px;
+    background-color: cyan;
+    font-size:25px;
+    top:600px
+    
+    
+}
+#shr4-2 p{
+    position: relative;
+    left:960px;
+    width:100px;
+    height:50px;
+    background-color:yellowgreen;
+    text-align: center;
+    top:-100px;
+}
+#shr4 button{
+    position: relative;
+    left:960px;
+    top:-100px;
+}
+#shil{
+    position: fixed;
+    width:100px;
+    height:75px;
+    background-color: red;
+
+}
+}
+}

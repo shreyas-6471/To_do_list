@@ -1,0 +1,55 @@
+<html>
+    <head>
+    <title>
+        <%= title %>
+       
+    </title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <script src="/js/home.js"></script>
+    <div id="shr">
+    <h1>TODO App</h1>
+    <form method="POST" action="/submit_it">
+        <span id="shr0"><b>DESCRIPTION</b></span>
+    <div id="shr1">
+    <input type="text" name="desc"  placeholder="What do you need to do?">
+    </div>
+    <div id="shr2">
+    <select name="category">
+        <option value="">-- Choose a Category--</option>
+        <option value="Work">WORK</option>
+        <option value="Home">HOME</option>
+        <option value="School">SCHOOL</option>
+    </select>
+    <label for="birthday">DUE DATE:</label>
+    <input type="date" id="birthday" name="birthday">
+    </div>
+    <div id="shr3">
+        <button value="Add Task">ADD TASK</button>
+    </div>
+    </form>
+     <!----  <form method="POST" action="/delete"> -->
+        <% for(let i of event_List) { %>
+            
+            <section id="shr4">
+            <p id="shr4-0"> <b> <%= i.description %> </b></p>
+            <p id="shr4-1"> <b> <%= i.date %> </b></p>
+            <section id="shr4-2">
+                <p> <b><%= i.category %> </b></p>
+            </section>
+           <section>
+             <!----  <input type="checkbox" name="check" value="<%= i._id %>"> -->
+            <form method="POST" action="/delete">
+             <button value="delete">Delete Event</button> 
+            <input type="hidden" name="hidden" value="<%= i._id %>">  
+            </form> 
+        </section>
+        
+        <% } %>
+      <!----  <button value="delete" id="shil">Delete Event</button>
+    </form> -->
+</div>
+</body>
+</html>
